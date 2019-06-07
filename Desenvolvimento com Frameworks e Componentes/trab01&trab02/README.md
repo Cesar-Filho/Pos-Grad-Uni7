@@ -22,6 +22,7 @@ raiz : localhost:8080/web
 
   **Exemplo 1 :**
 
+```
   {
   "id": 0,
   "produto": {
@@ -31,9 +32,11 @@ raiz : localhost:8080/web
   },
   "quantidade": 5
   }
+```
 
-  **Exemplo 2 :**
+**Exemplo 2 :**
 
+```
   {
   "id": 1,
   "produto": {
@@ -43,6 +46,7 @@ raiz : localhost:8080/web
   },
   "quantidade": 23
   }
+```
 
 - POST: http://localhost:8080/web/carrinho/finalizar
 
