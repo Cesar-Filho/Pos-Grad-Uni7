@@ -11,6 +11,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
@@ -37,6 +39,7 @@ public class Movimentacao extends BaseEntity {
   @JoinColumn(name = "conta_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "FK_CONTA"))
   private Conta conta;
 
+  @JsonBackReference
   @OneToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "movimentacao_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "FK_MOVIMENTACAO"))
   private Movimentacao movimentacao;

@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-BancarioApplication<bancario>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "uni7.persistencia.bancario.BancarioApplication",
+      "projectName": "bancario",
+      "args": ""
+    }
+  ]
+}
